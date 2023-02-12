@@ -15,7 +15,7 @@ public class UserService {
         this.viaCepFeign = viaCepFeign;
     }
 
-    public UserResponse executaRequestViaCep(UserRequest request) {
+    public UserResponse calcularFrete(UserRequest request) {
         return viaCepFeign.buscaEnderecoCep(request.getCep());
     }
 }

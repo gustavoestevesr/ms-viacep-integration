@@ -28,7 +28,7 @@ public class UserController {
     public ResponseEntity consultaCep(@RequestBody @Valid UserDto userDto) {
         UserRequest userRequest = new UserRequest();
         BeanUtils.copyProperties(userDto, userRequest);
-        return new ResponseEntity<>(userService.executaRequestViaCep(userRequest), HttpStatus.OK);
+        return new ResponseEntity<>(userService.calcularFrete(userRequest), HttpStatus.OK);
     }
 
 }
