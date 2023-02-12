@@ -17,7 +17,7 @@ public class UserResponse {
             put("Teresópolis", new BigDecimal("25.0"));
             put("Nova Friburgo", new BigDecimal("15.0"));
             put("Petrópolis", new BigDecimal("20.0"));
-            put("Rio de Janeior", new BigDecimal("30.0"));
+            put("Rio de Janeiro", new BigDecimal("30.0"));
         }
     };
 
