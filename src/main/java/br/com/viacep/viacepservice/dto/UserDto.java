@@ -6,9 +6,9 @@ import javax.validation.constraints.Size;
 
 public class UserDto {
 
-    @NotEmpty(message = "O campo 'CEP' não pode estar vazio")
-    @NotBlank(message = "O campo 'CEP' não pode conter caracteres brancos")
-    @Size(min = 8, max = 8)
+    @NotEmpty(message = "Mão pode estar vazio")
+    @NotBlank(message = "Não pode conter caracteres brancos")
+    @Size(min = 8, max = 8, message = "Deve conter apenas 8 digítos")
     private String cep;    
      
     public String getCep() {
